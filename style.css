@@ -12,6 +12,7 @@ body {
     display: inline-block;
     justify-content: flex-start;
     align-items: center;
+    margin-left: 10px;
     padding-right: 200px;
 }
 
@@ -34,6 +35,10 @@ body {
     margin: 30px;
 }
 
+.aheader:hover {
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
 .header {
     background-color: rgba(168, 164, 164, 0.6);
     height: 55px;
@@ -47,7 +52,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100vw;
+    max-width: 100%;
     height: 100vh;
     background-color: #A8A4A4;
    
@@ -60,20 +65,22 @@ body {
     align-items: flex-start;
     flex-direction: column;
     margin: 300px 100px 0 400px; 
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.2);
 }
 
 .container {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} 
 
 .content {
     background-color: rgba(194, 192, 192, 45%);
-    border-radius: 3%;
-    width: 80vw;
+    border-radius: 15px;
+    width: 80%;
     margin: 50px 0 50px 0;
-    padding: 5%;
+    padding: 3% 4% 8% 4%;
 }
 
 .inside {
@@ -83,13 +90,13 @@ body {
     flex-flow: row nowrap;
 }
 .nameConttainer {
-    font-size: 40px;
+    font-size: 50px;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 
-.foto {
+.fotoME {
     width: 40% ;
     height: 30%;
     position: relative;
@@ -100,7 +107,7 @@ body {
     height: 60vh;
     width: 40vw;
     background-color: rgba(254, 254, 254, 0.6) ;
-    border-radius: 3%;
+    border-radius: 15px;
     position: relative;
     top: 20px; right: 40px;
 }
@@ -113,21 +120,94 @@ body {
     font-size: 25px;
 }
 
-.imgCertificateLeft {
-    width: 20vw;
-    height: 25vh;
-    /* margin-right: 100px; */
+.imgCertificate {
+    width: 35%;
+    height: 30%;
 }
 
-.imgCertificateRight{
-    width: 20vw;
-    height: 25vh;
+.imgCertificate:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-
 
 .gridCertificate {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
-    width: 60vw;
+}
+
+.imgHardSkills {
+    width: 120px;
+    height: 120px;
+    margin: 0 10px 0 10px;
+}
+
+.icon_hard_skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.textHardSkills {
+    font-size: 35px;
+    color: #890707;
+    font-weight: bold;
+    margin: 0 10px 0 10px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonSlider {
+    border: none;
+    font-size: 20px;
+    background: transparent;
+}
+
+.buttonSlider:hover {
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.slider {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.insideSlider {
+    background-color: rgba(154, 150, 150, 45%);
+    border-radius: 15px;
+}
+
+.imgButton {
+    width: 60px;
+    height: 60px;
+    opacity: 0.5;
+}
+
+.footer {
+    background-color: #242424;
+    padding: 3% 8% 3% 8%;
+    max-width: 100%;
+}
+
+.icon_footer {
+    background-color: #9F9F9F ;
+    border-radius: 15px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.textFooter {
+    font-size: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
