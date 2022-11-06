@@ -1,0 +1,37 @@
+function closeAllModals(event) {
+    
+    if(event.type == "keydown") {
+        if (event.key != "Escape") {
+            return;
+        }
+    }
+    else if (event.type != "click") {
+        return;
+    }
+
+    const elements = document.getElementsByClassName('modalWindows');
+    while(elements.length > 0){
+        elements[0].parentNode.removeChild(elements[0]);
+    }
+
+    document.removeEventListener("keydown", closeAllModals);
+}
+
+
+function openModalWindow(imgBlock){
+    let divModal = document.createElement('div');
+    divModal.className = 'modalWindows';
+    let img = document.createElement('img');
+    img.src = imgBlock.src;
+    img.className = 'imgModel';
+    divModal.appendChild(img);
+    document.body.appendChild(divModal);
+    
+    document.addEventListener("keydown", closeAllModals);
+    img.addEventListener("click", closeAllModals);
+}
+
+
+
+
+

@@ -10,23 +10,24 @@
 </head>
 <body>
 
-   <div class="container_header">
         <header div class="header">
 
             <div class="icon_header">
                 <p class="anknv" class="icon" href="">AN_KNV </p>
                 <a href="https://t.me/anastasiya_kaneva"><img src="img/icons8-teleg.png" class="icon"></a>
                 <a href="https://github.com/Anastttasia"><img src="img/icons8-github-60.png" class="icon"></a>
-                <img src="img/icons8-gmail-50.png" class="icon">
+                <div class="tooltip"><img src="img/icons8-gmail-50.png" class="icon"><span class="tooltiptext">nastya.kaneva.99@gmail.com</span>
+                </div>
             </div>
 
-            <a class="aheader" href="#abou_me">Обо мне</a>
+            <a class="aheader" href="#about_me">Обо мне</a>
             <a class="aheader" href="#certificate">Сертификаты</a>
             <a class="aheader" href="#hard_skills">Hard Skills</a>
             <a class="aheader" href="#portfolio">Портфолио</a>
             <a class="aheader" href="#contacts">Контакты</a>
         </header>
 
+        <div class="container_welcome">
         <div class="welcome">
             <p> Добро пожаловать на мой веб-сайт!</p>
             <p> Меня зовут Настя!</p>
@@ -36,7 +37,7 @@
 
     <div class="container">
         <div class="content">
-            <h1 class="nameConttainer" id="abou_me">Обо мне</h1>
+            <h1 class="nameConttainer" id="about_me">Обо мне</h1>
 
             <div class="inside">
                 <img class="fotoME" src="img/foto.png">
@@ -55,11 +56,11 @@
 
     <div class="container">
         <div class="content">
-            <h1 class="nameConttainer" id="certificate">Сертификаты</h1>
+            <h1 class="nameConttainer">Сертификаты</h1>
 
             <div class="gridCertificate">
-                <img class="imgCertificate" src="img/certificate.png">
-                <img class="imgCertificate" src="img/certificate.png">
+                <img class="imgCertificate" src="img/certificate.png" onclick="openModalWindow(this)">
+                <img class="imgCertificate" src="img/certificate.png " onclick="openModalWindow(this)">
             </div>
 
         </div>
@@ -121,6 +122,6 @@
         <p class="textFooter">2022</p>
         <p class="textFooter">Анастасия Канева</p>
     </footer>
-
+<script src="javaScript.js"></script>
 </body>
 </html>

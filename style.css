@@ -188,6 +188,11 @@ body {
     
 }
 
+.imgModel {
+    max-width: 55%;
+    max-height: 70%;
+}
+
 .imgHardSkills {
     width: 120px;
     height: 120px;
