@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleSliderPortfolio.css"> 
 </head>
 <body>
 
@@ -25,6 +26,7 @@
             <a class="aheader" href="#hard_skills">Hard Skills</a>
             <a class="aheader" href="#portfolio">Портфолио</a>
             <a class="aheader" href="#contacts">Контакты</a>
+            <div class="nowTime" id="nowTime"></div>
         </header>
 
         <div class="container_welcome">
@@ -42,12 +44,13 @@
             <div class="inside">
                 <img class="fotoME" src="img/foto.png">
                 <div class="forTextAboutMe">
-                    <p class="text">Меня зовут Настя! 
-                        Мой родной город Нарьян - Мар! Это городок за северным полярным кругом! <br>
-                        Сейчас я проживаю в Санкт - Петербурге. <br>
+                    <p class="text">Меня зовут Настя!
+                        Я проживаю в Санкт - Петербурге. <br>
                         В 2021 году я закончила СПБГИКиТ по направлению "телевидение".
                         Но я узнала о Fronten-разрабтке и очень захотела стать частью
                         сферы IT.
+                        Так что свой опыт программирования получаю через pet-проекты!
+
                     </p>
                 </div>
             </div>
@@ -56,11 +59,11 @@
 
     <div class="container">
         <div class="content">
-            <h1 class="nameConttainer">Сертификаты</h1>
+            <h1 class="nameConttainer" id="certificate">Сертификаты</h1>
 
             <div class="gridCertificate">
                 <img class="imgCertificate" src="img/certificate.png" onclick="openModalWindow(this)">
-                <img class="imgCertificate" src="img/certificate.png " onclick="openModalWindow(this)">
+                <img class="imgCertificate" src="img/certificate2.png " onclick="openModalWindow(this)">
             </div>
 
         </div>
@@ -104,24 +107,32 @@
     <div class="container">
         <div class="content">
             <h1 class="nameConttainer" id="portfolio">Портфолио</h1>
-            <div class="slider">
-                <button class="buttonSlider"><img class="imgButton" src="img/buttonLeft.png"></button>
-                <div class="insideSlider"> TEXT</div>
-                <button class="buttonSlider"><img class="imgButton" src="img/buttonRight.png"></button>
+            <div class="sliderContainer">
+                <button class="button" id="leftButton">❮</button>
+                <div class="contentSlider"></div>  
+                <button class="button" id="rightButton">❯</button>
             </div>
+            <script src="slider.js"></script>
         </div>
     </div>
 
-    <footer class="footer"> 
-        <div class="icon_footer">
-            <a href="https://t.me/anastasiya_kaneva"><img src="img/icons8-teleg.png" class="icon"></a>
-            <img src="img/icons8-github-60.png" class="icon">
-            <img src="img/icons8-gmail-50.png" class="icon">
+    <footer class="footer" id="contacts"> 
+        <div class="map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1571eea7f2c8c984af7d0766261d0f56b2e7c45042cef154ce8711f9b7dba1f3&amp;width=600&amp;height=300&amp;lang=ru_RU&amp;scroll=true">
+            </script>
+        
+        <p class="contactMe">Телефон: 89116726799<br>
+            Почта: nastya.kaneva.99@gmail.com
+        </p>
+       
         </div>
-        <div class="map"></div>
-        <p class="textFooter">2022</p>
-        <p class="textFooter">Анастасия Канева</p>
+        <div>
+            <p class="textFooter">2022</p>
+            <p class="textFooter">Анастасия Канева</p>
+        </div>
+       
     </footer>
-<script src="javaScript.js"></script>
+<script src="init.js"></script>
+
 </body>
 </html>
