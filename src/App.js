@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import Welcome from './components/Welcome/Welcome';
+import AboutMe from './components/AboutMe/AboutMe';
+import Certificate from './components/Certificate/Certificate';
+import HardSkills from './components/HardSkills/HardSkills';
+import Portfolio from './components/Portfolio/Portfolio';
+import Footer from './components/Footer/Footer';
+// import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
-function App() {
+
+const App = (props) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header/>
+      <Welcome/>
+      <AboutMe/>
+      <Certificate/>
+      <HardSkills/>
+      <Portfolio/>
+      <Footer/>
     </div>
+   
   );
 }
 
-export default App;
+export default App; 

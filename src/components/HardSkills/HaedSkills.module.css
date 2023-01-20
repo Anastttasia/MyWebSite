@@ -1,0 +1,47 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+  
+  .content {
+    background-color: rgba(194, 192, 192, 45%);
+    border-radius: 15px;
+    width: 80%;
+    margin: 50px 0 50px 0;
+    padding: 3% 4% 8% 4%;
+  }
+  
+  .nameConttainer {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+  }
+
+  .imgHardSkills {
+    width: 120px;
+    height: 120px;
+    margin: 0 10px 0 10px;
+}
+
+.icon_hard_skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textHardSkills {
+    font-size: 35px;
+    color: #890707;
+    font-weight: bold;
+    margin: 0 10px 0 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,9 @@
+.nowTime {
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    color: black;
+    margin-left: 450px;
+    display: flex;
+    align-items: center;
+  }
