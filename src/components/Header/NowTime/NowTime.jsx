@@ -1,37 +1,34 @@
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import s from './NowTime.module.css';
 
+const getNowDate = () => {
+    const date = new Date();
+    
+    return {
+        hours: date.getHours(),
+        minutes: date.getMinutes(),
+        seconds: date.getSeconds(),
+    };
+};
 
-let clock = document.querySelector('.nowTime');
-let nowDate = new Date();
-let hours = nowDate.getHours();
-let minutes = nowDate.getMinutes();
-let sec = nowDate.getSeconds();
+const NowTime = () => {
+    const [{ hours, minutes, seconds}, setCounter] = useState(getNowDate());
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCounter(getNowDate());
+        }, 1000);
 
+    return () => {
+        clearInterval(interval);
+    };
+},[]);
 
-// const NowTime = () => {
-//     return (
-//         <div>
-          
-//           function time() {
-//                 if(hours < 10) {
-//                     hours = "0" + hours;
-//                 }
-                
-//                 if(minutes < 10) {
-//                  minutes = "0" + minutes;
-//                 }
-//                 if(sec < 10) {
-//                     sec = "0" + sec;
-//                 }
+    return <div className={s.styleNowTime}>
+        {`${hours}:${minutes}:${seconds}`}
+        </div>
+};
 
-//             clock.innerHTML = `${hours}:${minutes}:${sec}`;
-//             }
-
-//         </div>
-
-//     setInterval(time, 1000))
-// }
-
-// export default NowTime;
+export default NowTime;
