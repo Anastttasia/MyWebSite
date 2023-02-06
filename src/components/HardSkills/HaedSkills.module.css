@@ -1,47 +1,117 @@
-.container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } 
-  
-  .content {
-    background-color: rgba(194, 192, 192, 45%);
-    border-radius: 15px;
-    width: 80%;
-    margin: 50px 0 50px 0;
-    padding: 3% 4% 8% 4%;
-  }
-  
-  .nameConttainer {
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 150px;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
-  .imgHardSkills {
-    width: 120px;
-    height: 120px;
-    margin: 0 10px 0 10px;
+* {
+  color: black;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+}
+
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background-color: rgba(194, 192, 192, 45%);
+  border-radius: 15px;
+  width: 80%;
+  margin: 50px 0 50px 0;
+  padding: 3% 4% 8% 4%;
+}
+
+.nameConttainer {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+.imgHardSkills {
+  width: 120px;
+  height: 120px;
+  margin: 0 10px 0 10px;
 }
 
 .icon_hard_skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .textHardSkills {
-    font-size: 35px;
-    color: #890707;
-    font-weight: bold;
-    margin: 0 10px 0 10px;
+  font-size: 35px;
+  color: #890707;
+  font-weight: bold;
+  margin: 0 10px 0 10px;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media screen and (max-width: 1020px) {
+  .nameConttainer {
+    font-size: 35px;
+  }
+
+  .textHardSkills {
+    font-size: 25px;
+  }
+
+  .imgCertificate {
+    width: 40%;
+    height: 35%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .nameConttainer {
+    font-size: 30px;
+    margin-bottom: 70px;
+  }
+
+  .icon_hard_skills {
+    flex-wrap: wrap;
+  }
+
+  .textHardSkills {
+    font-size: 20px;
+  }
+
+  .imgHardSkills {
+    width: 80px;
+    height: 80px;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+  .nameConttainer {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  .icon_hard_skills {
+    flex-wrap: wrap;
+  }
+ 
+
+  .textHardSkills {
+    font-size: 12px;
+  }
+
+  .imgHardSkills {
+    width: 48px;
+    height: 48px;
+  }
+
 }

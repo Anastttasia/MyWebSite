@@ -30,12 +30,13 @@ const Header = () => {
 
                 </div>
             </div>
-
-            <a className={s.aheader} href="#about_me">Обо мне</a>
-            <a className={s.aheader} href="#certificate">Сертификаты</a>
-            <a className={s.aheader} href="#hard_skills">Hard Skills</a>
-            <a className={s.aheader} href="#portfolio">Портфолио</a>
-            <a className={s.aheader} href="#contacts">Контакты</a>
+            <div className={s.containerA}>
+                <a className={s.aheader} href="#about_me">Обо мне</a>
+                <a className={s.aheader} href="#certificate">Сертификаты</a>
+                <a className={s.aheader} href="#hard_skills">Hard Skills</a>
+                {/* <a className={s.aheader} href="#portfolio">Портфолио</a> */}
+                <a className={s.aheader} href="#contacts">Контакты</a>
+            </div>
             <NowTime />
         </div>
     )

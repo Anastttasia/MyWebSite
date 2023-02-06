@@ -12,7 +12,7 @@ const MainContent = () => {
             <AboutMe />
             <Certificate />
             <HardSkills />
-            <Portfolio />
+            {/* <Portfolio /> */}
         </div>
     )
 }

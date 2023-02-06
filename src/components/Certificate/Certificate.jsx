@@ -11,8 +11,8 @@ const Certificate = (props) => {
                 <h1 className={s.nameConttainer} id="certificate">Сертификаты</h1>
 
                 <div className={s.gridCertificate}>
-                    <img className={s.imgCertificate} src={imgCertificate} onclick="openModalWindow(this)"/>
-                    <img className={s.imgCertificate} src={imgCertificate2} onclick="openModalWindow(this)"/>
+                    <img className={s.imgCertificate} src={imgCertificate} onClick="openModalWindow(this)"/>
+                    <img className={s.imgCertificate} src={imgCertificate2} onClick="openModalWindow(this)"/>
                 </div>
 
             </div>

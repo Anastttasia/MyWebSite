@@ -36,8 +36,12 @@ const HardSkills = () => {
                     </div>
 
                     <div className={s.card}>
-                        <img className={s.imgHardSkills} src={GitHub}/>
-                            <p className={s.textHardSkills}>GitHub</p>
+
+                    <a href="https://github.com/Anastttasia" target="_blank">
+                            <img src={GitHub} className={s.imgHardSkills} />
+                        </a>
+                        <p className={s.textHardSkills}>GitHub</p>  
+                        
                     </div>
 
                 </div>

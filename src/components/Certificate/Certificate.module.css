@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+  color: black; 
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+}
+
+
 .container {
     width: 100%;
     display: flex;
@@ -54,4 +63,64 @@
 .imgModel {
     max-width: 55%;
     max-height: 70%;
+}
+
+
+
+/* @media screen and (max-width: 1580px){
+  
+} */
+  
+  
+  @media screen and (max-width: 1020px){
+    .nameConttainer {
+      font-size: 35px;
+    }
+
+    .imgCertificate {
+      width: 40%;
+      height: 35%;
+    }
+}
+
+  
+  @media screen and (max-width: 768px){
+    .nameConttainer {
+      font-size: 30px;
+      margin-bottom: 70px;
+    }
+
+    .gridCertificate {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .imgCertificate {
+      width: 55%;
+      height: 40%;
+      margin: 5px 0 12px 0;
+  }
+
+}
+  
+  @media screen and (max-width: 360px){
+    .nameConttainer {
+      font-size: 20px;
+      margin-bottom: 50px;
+    }
+
+    .gridCertificate {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .imgCertificate {
+      width: 70%;
+      height: 60%;
+      margin: 5px 0 12px 0;
+  }
 }

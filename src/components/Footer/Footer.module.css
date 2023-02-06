@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+*{
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+}
+
 .map {
     max-width: 100% ;
     display: flex;
@@ -22,7 +29,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center; 
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .textFooter {
@@ -31,4 +38,29 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .contactMe {
+        font-size: 13px;
+    }
+
+    .textFooter {
+        font-size: 12px;
+    }
+
+}
+  
+  @media screen and (max-width: 360px) {
+    .contactMe {
+        font-size: 9px;
+    }
+
+    .textFooter {
+        font-size: 8px;
+    }
+
+  
 }
