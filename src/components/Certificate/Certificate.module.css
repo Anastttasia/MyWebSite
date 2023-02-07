@@ -6,7 +6,6 @@
   margin: 0;
 }
 
-
 .container {
     width: 100%;
     display: flex;
@@ -61,17 +60,15 @@
 }
 
 .imgModel {
-    max-width: 55%;
-    max-height: 70%;
+  max-width: 60vw;
+  max-height: 70vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-
-/* @media screen and (max-width: 1580px){
-  
-} */
-  
-  
   @media screen and (max-width: 1020px){
     .nameConttainer {
       font-size: 35px;

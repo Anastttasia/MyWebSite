@@ -1,12 +1,13 @@
 import React from "react";
 import s from './Footer.module.css';
+// import Map from "./Map/Map";
 
 const Footer = () => {
     return (
         <div className={s.footer} id="contacts">
             <div className={s.map}>
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1571eea7f2c8c984af7d0766261d0f56b2e7c45042cef154ce8711f9b7dba1f3&amp;width=600&amp;height=300&amp;lang=ru_RU&amp;scroll=true">
-                </script>
+                
+                {/* <Map /> */}
 
                 <p className={s.contactMe}>
                     Телефон: 89116726799

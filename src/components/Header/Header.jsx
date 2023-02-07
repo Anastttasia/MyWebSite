@@ -16,20 +16,26 @@ const Header = () => {
                         <p className={s.anknv + ' ' + s.icon}> AN_KNV </p>
                     </div>
 
+                <div className={s.iconBlock}>
                     <div>
-                        <a href="https://t.me/anastasiya_kaneva">
+                        <a href="https://t.me/anastasiya_kaneva" target="_blank">
                             <img src={iconTelegram} className={s.icon} />
                         </a>
-                        <a href="https://github.com/Anastttasia">
+                    </div>
+
+                    <div>
+                        <a href="https://github.com/Anastttasia" target="_blank">
                             <img src={iconGitHub} className={s.icon} />
                         </a>
-                        <div className={s.tooltip}>
-                            <img src={iconGmail} className={s.icon} />
-                            <span className={s.tooltiptext}>nastya.kaneva.99@gmail.com</span>
-                        </div>
+                    </div>
 
+                    <div className={s.tooltip}>
+                        <img src={iconGmail} className={s.icon} />
+                        <span className={s.tooltiptext}>nastya.kaneva.99@gmail.com</span>
+                    </div>
                 </div>
-            </div>
+                    
+                </div>
             <div className={s.containerA}>
                 <a className={s.aheader} href="#about_me">Обо мне</a>
                 <a className={s.aheader} href="#certificate">Сертификаты</a>
@@ -38,7 +44,7 @@ const Header = () => {
                 <a className={s.aheader} href="#contacts">Контакты</a>
             </div>
             <NowTime />
-        </div>
+        </div >
     )
 }
 

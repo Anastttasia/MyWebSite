@@ -44,9 +44,11 @@
   @media screen and (max-width: 360px){
     
     .styleNowTime {
+      display: flex;
+      justify-content: flex-end;
       width: 50px;
       height: 30px;
-      font-size: 11px;
+      font-size: 15px;
       /* margin-left: 15px;
       padding-right: 7px; */
     }

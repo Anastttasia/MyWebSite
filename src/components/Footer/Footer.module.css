@@ -40,8 +40,6 @@
     align-items: flex-end;
 }
 
-
-
 @media screen and (max-width: 768px) {
     .contactMe {
         font-size: 13px;
@@ -50,7 +48,6 @@
     .textFooter {
         font-size: 12px;
     }
-
 }
   
   @media screen and (max-width: 360px) {

@@ -55,8 +55,6 @@
   align-items: center;
 }
 
-
-
 @media screen and (max-width: 1020px) {
   .nameConttainer {
     font-size: 35px;
@@ -71,7 +69,6 @@
     height: 35%;
   }
 }
-
 
 @media screen and (max-width: 768px) {
   .nameConttainer {
