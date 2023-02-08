@@ -1,0 +1,99 @@
+.imgHardSkills {
+    width: 120px;
+    height: 120px;
+    margin: 0 10px 0 10px;
+}
+
+.icon_hard_skills {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.textHardSkills {
+    font-size: 35px;
+    color: #890707;
+    font-weight: bold;
+    margin: 0 10px 0 10px;
+}
+
+.inline_icon {
+    display: flex;
+    flex-wrap:nowrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1020px) {
+
+    .imgHardSkills {
+        width: 100px;
+        height: 100px;
+        margin: 0 10px 0 10px;
+    }
+
+    .textHardSkills {
+      font-size: 25px;
+    }
+  
+    .imgCertificate {
+      width: 40%;
+      height: 35%;
+    }
+  }
+  
+  @media screen and (max-width: 830px) {
+    .icon_hard_skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+  
+    .icon_hard_skills {
+      flex-wrap: wrap;
+    }
+  
+    .textHardSkills {
+      font-size: 20px;
+    }
+
+    .imgHardSkills {
+      width: 80px;
+      height: 80px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 360px) {
+  
+    .icon_hard_skills {
+      flex-wrap: wrap;
+    }
+   
+    .textHardSkills {
+      font-size: 12px;
+    }
+  
+    .imgHardSkills {
+      width: 48px;
+      height: 48px;
+    }
+
+  }
+
+  @media screen and (max-width: 270px) {
+    .imgHardSkills {
+        width: 40px;
+        height: 40px;
+      }
+}

@@ -95,33 +95,6 @@ body {
 }
 
 
-
-.imgHardSkills {
-    width: 120px;
-    height: 120px;
-    margin: 0 10px 0 10px;
-}
-
-.icon_hard_skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.textHardSkills {
-    font-size: 35px;
-    color: #890707;
-    font-weight: bold;
-    margin: 0 10px 0 10px;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .buttonSlider {
     border: none;
     font-size: 20px;
@@ -242,7 +215,8 @@ body {
 
     .nameConttainer {
         font-size: 30px;
-        margin-bottom: 80px;
+        padding-bottom: 80px;
+        margin: 0;
       }
   
       .fotoME {
@@ -351,7 +325,7 @@ body {
       }
   
       .text {
-        font-size: 10px;
+        font-size: 9px;
       }
 
 }

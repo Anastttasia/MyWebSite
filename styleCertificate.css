@@ -1,5 +1,5 @@
 .imgCertificate {
-    width: 35%;
+    width: 40%;
     height: 30%;
 }
 
@@ -62,7 +62,7 @@
   @media screen and (max-width: 1020px){
 
     .imgCertificate {
-      width: 40%;
+      width: 45%;
       height: 35%;
     }
 }
