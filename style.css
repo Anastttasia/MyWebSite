@@ -118,11 +118,11 @@ body {
 }
 
 .map {
-    max-width: 100%;
+    width: 400px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
 }
 
 .footer {
@@ -141,7 +141,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .textFooter {
@@ -232,11 +232,26 @@ body {
         height: 30vh;
         width: 45vw;
       }
+
+      .styleMap {
+        width: 40px;
+        height: 20px;
+      }
   
       .text {
         /* padding: 10%; */
         font-size: 18px;
       }
+
+      .contactMe {
+        font-size: 13px;
+    }
+
+    .textFooter {
+        font-size: 12px;
+    }
+
+  }
 
       @media screen and (max-width: 540px){
     
@@ -251,8 +266,8 @@ body {
         .text {
             font-size: 15px;
           }
+
     }
-}
   
   @media screen and (max-width: 360px){
 
@@ -290,6 +305,14 @@ body {
         font-size: 11px;
         bottom: 100px; left: 20px;
       }
+
+      .contactMe {
+        font-size: 9px;
+    }
+
+    .textFooter {
+        font-size: 5px;
+    }
 
 }
 
