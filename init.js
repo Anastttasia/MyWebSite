@@ -1,8 +1,9 @@
 
-let clock = document.querySelector('.nowTime');
+let clock = document.querySelector('.styleNowTime');
 
 function time() {
     let nowDate = new Date();
+    
     let hours = nowDate.getHours();
     let minutes = nowDate.getMinutes();
     let sec = nowDate.getSeconds();

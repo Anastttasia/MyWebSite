@@ -28,8 +28,47 @@ function clearSlider() {
 
 //НАЧАЛО
 
+class Project {
+
+    constructor(picture, name) {
+        console.log("START CONSTRUCTOR")
+        this.picture = picture;
+        this.name = name;
+        this.printInfo()
+        console.log("END CONSTRUCTOR")
+    }
+
+    setPicture(picture) {
+        this.picture = picture;
+    }
+
+    setName(name) {
+        this.name = name;
+    }
+
+    addInfo(picture, name) {
+        this.picture = picture;
+        this.name = name;
+    }
+
+    printInfo() {
+        console.log('Picture: ' + this.picture)
+        console.log('Name: ' + this.name)
+    }
+
+}
+
+
 let picture = ['img/lash.png', 'img/toDoList.png', 'img/JSGame.png'];
 let names = ['Сайт для мастера по ресницам!', 'Сайт для создания списка дел!', 'Старая добрая игра Dino!'];
+
+let project1 = new Project('1', '2');
+project1.setName("Сайт для мастера по ресницам!")
+project1.printInfo()
+
+let project2 = new Project('3', '3');
+project2.setName("Сайт для мастера!")
+project2.printInfo()
 
 let sliderArray = new Array();
 
@@ -88,3 +127,5 @@ rightButton.addEventListener('click', () => {
 
 ITEMS_CONTAINER.appendChild(sliderArray[index]);
 //КОНЕЦ
+
+ 
