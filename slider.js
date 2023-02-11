@@ -31,11 +31,10 @@ function clearSlider() {
 class Project {
 
     constructor(picture, name) {
-        console.log("START CONSTRUCTOR")
         this.picture = picture;
         this.name = name;
         this.printInfo()
-        console.log("END CONSTRUCTOR")
+   
     }
 
     setPicture(picture) {
@@ -52,8 +51,7 @@ class Project {
     }
 
     printInfo() {
-        console.log('Picture: ' + this.picture)
-        console.log('Name: ' + this.name)
+   
     }
 
 }
