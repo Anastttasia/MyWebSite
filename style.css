@@ -253,19 +253,26 @@ body {
 
   }
 
-      @media screen and (max-width: 540px){
+    @media screen and (max-width: 540px){
     
-        .fotoME {
-            width: 55% ;
-            height: 45%;
-            position: relative;
-            bottom: 120px;
-            left: 50px;
+      .fotoME {
+          width: 55% ;
+          height: 45%;
+          position: relative;
+          bottom: 120px;
+          left: 50px;
         }
 
-        .text {
-            font-size: 12px;
-          }
+      .text {
+          font-size: 12px;
+        }
+    }
+
+    @media screen and (max-width: 470px){
+      .welcome {
+        font-size: 20px;
+        margin: 80px 40px 120px 30px;  
+      }
     }
   
   @media screen and (max-width: 360px){
