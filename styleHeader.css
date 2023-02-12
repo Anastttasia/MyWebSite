@@ -181,8 +181,8 @@
 @media screen and (max-width: 553px) {
 
     .header {
-        height: 60px;
-        padding-bottom: 5px;
+        height: 64px;
+        padding-bottom: 7px;
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: flex-end;
